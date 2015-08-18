@@ -1,0 +1,77 @@
+.logo {
+    @include flex(0 0 auto);
+    font-family: Morpheus;
+    margin-top: -5px; // fix this fonts weird height
+
+    &:hover .badge {
+        background-color: lighten($textColor, 30%);
+    }
+}
+
+.badge {
+    color: #fff;
+    background-color: $textColor;
+
+    border-radius: .2em;
+    padding: 0 .2em;
+    font-size: .8em;
+    margin-left: .2em;
+
+    transition: background-color .2s;
+}
+
+.external-sites-icons {
+    @include flex(0 0 auto);
+    font-size: 1.2em;
+    position: relative;
+}
+
+@include respond-to(tiny-screens) {
+    .external-sites-icons-h { display: none; }
+}
+
+@include respond-to-more-than($break-tiny) {
+    .external-sites-icons-v { display: none; }
+}
+
+#external-sites-dd {
+    display: none;
+}
+
+#external-sites-dd + label {
+    padding: 0;
+    border: 0 none;
+    cursor: pointer;
+
+    transition: color .2s;
+
+    &:hover {
+        color: #666;
+        background-color: transparent;
+    }
+
+    // overwrite non-checked checkbox default visibility
+    i {
+        visibility: visible;
+    }
+}
+
+.external-sites-dd-items-wrap {
+    position: absolute;
+    top: 146%; // just a value that made it look good
+
+    max-height: 0;
+    overflow-y: hidden;
+
+    transition: max-height .4s;
+
+    #external-sites-dd:checked ~ & {
+        max-height: 230px;
+    }
+}
+
+.external-sites-dd-items {
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+}
