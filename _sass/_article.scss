@@ -1,7 +1,15 @@
+@import "flexbox";
+
 article {
-    margin-bottom: 25px;
+    @include flex(1);
+
+    margin: .5em 0;
 
     h2 {
         margin-top: 0;
+    }
+
+    img {
+        max-width: 100%;
     }
 }

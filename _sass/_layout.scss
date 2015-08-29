@@ -1,10 +1,25 @@
 @import "flexbox", "respond-to", "variables";
 
+%remove-top-btm-margin {
+    > :first-child { margin-top: 0 }
+    > :last-child  { margin-bottom: 0 }
+}
+
 body {
     @include display-flex;
     @include flex-direction(column);
 
     min-height: 100%;
+}
+
+.container {
+    @include display-flex;
+    margin: 0 auto;
+
+    width: 100%;
+    padding: 0 16px;
+
+    &:not(.full-width) { max-width: 1440px; }
 }
 
 .page-header {
@@ -28,7 +43,16 @@ body {
 
 .page-wrap {
     @include flex(1);
-    @include display-flex;
+
+    @extend .container;
+    @include align-items(flex-start);
+
+    padding: 16px;
+
+    @include flex-direction(column);
+    @include respond-to-more-than($break-small) {
+        @include flex-direction(row);
+    }
 }
 
 .page-footer {
@@ -40,19 +64,29 @@ body {
     }
 }
 
-.container {
-    @include display-flex;
-    margin: 0 auto;
+.page-content {
+    @include respond-to-more-than($break-small) {
+        @include flex(3);
+    }
 
-    width: 100%;
-    padding: 0 16px;
-
-    &:not(.full-width) { max-width: 1440px; }
+    @extend %remove-top-btm-margin;
 }
 
-.page-content {
-    @extend .container;
+.sidebar {
+    @include respond-to-more-than($break-small) {
+        @include flex(2);
+    }
+    @include respond-to-max($break-small) {
+        margin-top: 2em;
+    }
 
-    @include flex-direction(column);
-    padding: 16px;
+    padding: .25em 0;
+    @extend %remove-top-btm-margin;
+
+    border-left: 2px solid $borderColor;
+
+    @include respond-to-more-than($break-small) {
+        margin-left: 1.75em;
+        padding-left: .25em;
+    }
 }
