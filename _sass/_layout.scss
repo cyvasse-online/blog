@@ -90,3 +90,9 @@ body {
         padding-left: .25em;
     }
 }
+
+.page-content,
+.sidebar {
+    min-width: 0;
+    max-width: 100%;
+}
