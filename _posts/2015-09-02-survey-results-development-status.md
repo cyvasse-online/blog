@@ -69,7 +69,7 @@ to disable it (if it will be enabled by default at all). Next diagram!
 
 [img3]: /img/survey-3.png
 
-The answers to this question are pretty self-explanatory, so this is all of questions
+The answers to this question are pretty self-explanatory, so this is all of the questions
 about the game and website done! There's still one thing to look at though: The last,
 optional question about monetization:
 
@@ -87,12 +87,12 @@ Like you might have noticed, we already have a Cyvasse-related ad, but only on t
 keep that ad exclusive to the blog for now and see how you all respond to it, and will
 consider putting it on the main page at a later point.
 
-As far as donations go: I don't see a reason not enable donations. It might take some
+As far as donations go: I don't see a reason not to enable donations. It might take some
 time to find the right platform(s) to use for this though, which is why there is no
 donate button anywhere yet.
 
-There were also suggestions about other monetization options, of which I want mention one
-briefly: A non-gratis iOS app. I won't consider doing that as long as Apple's current
+There were also suggestions about other monetization options, of which I want to mention
+one briefly: A non-gratis iOS app. I won't consider doing that as long as Apple's current
 developer agreement is in place. There's an excellent article about it at [eff.org][x]
 which should give you an idea on why I won't work on programs for Apple devices.
 
