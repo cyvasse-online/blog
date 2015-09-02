@@ -5,8 +5,21 @@ article {
 
     margin: .5em 0;
 
-    h2 {
-        margin-top: 0;
+    header {
+        @include display-flex;
+        @include align-items(flex-end);
+
+        margin-bottom: 1em;
+
+        h2 {
+            margin: 0;
+        }
+
+        .postmeta {
+            margin-left: 1em;
+            margin-bottom: .2em;
+            padding: .2em .4em;
+        }
     }
 
     img {

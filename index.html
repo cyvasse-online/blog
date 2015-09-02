@@ -5,6 +5,11 @@ layout: default
 <article>
     <header>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="postmeta badge">
+            by <span class="author">{{ post.author }}</span>
+            on <time class="publication-date" datetime="{{ post.date | date: "%F" }}">
+                {{ post.date | date: "%d.%m.%Y" }}</time>
+        </div>
     </header>
     <div class="excerpt">
         {{ post.excerpt }}

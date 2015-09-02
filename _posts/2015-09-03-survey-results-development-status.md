@@ -1,5 +1,6 @@
 ---
 title: Survey results, development status
+author: Jonas Platte
 layout: post
 ---
 

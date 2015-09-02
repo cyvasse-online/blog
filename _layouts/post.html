@@ -4,6 +4,11 @@ layout: default
 <article>
     <header>
         <h2>{{ page.title }}</h2>
+        <div class="postmeta badge">
+            by <span class="author">{{ page.author }}</span>
+            on <time class="publication-date" datetime="{{ post.date | date: "%F" }}">
+                {{ page.date | date: "%d.%m.%Y" }}</time>
+        </div>
     </header>
 
     {{ content }}
