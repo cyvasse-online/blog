@@ -44,27 +44,26 @@ game that runs in your browser) wouldn't be such a nightmare to work with.
 
 I have started pretty much from scratch with the new implementation, and by the time of
 writing, there's not much done yet, but this means that the next update, although not
-being a big one, will be a big one. Here's a rough outline of what will change:
+adding a bot, will be a big one. Here's a rough outline of what will change:
 
 * The game will look better ([probable new board look][NewBoard] – colors might change)
 * It will download much faster
 * CPU load and memory usage will drop significantly, both are ridiculously high currently
 
 At this point I should probably mention that all the code that makes up the games
-functionality still was only done by me alone. It would be really nice if this changed,
-so if you're a programmer, have some free time and are interested in Cyvasse, please
-check out my corresponding [post on reddit][].
+functionality still was only written by me alone. It would be really nice if this
+changed, so if you're a programmer, have some free time and are interested in Cyvasse,
+please check out my corresponding [post on reddit][].
 
 [NewBoard]: /img/board.svg
 [post on reddit]: https://www.reddit.com/r/CyvasseOnline/comments/3jaqd0/help_wanted/
 
-To quickly get back to the potential new features: Apart from the bot that will obviously
-be the top priority after the client rewrite, I'm pretty certain I will implement both
-the interactive tutorial and the notifications. I am pretty sure the latter simply got
-"Eww. Don't do that" twice because it wasn't "**Optional** notifications". I won't make
-your browser play sound whenever something happens in the game without leaving you an
-option to disable it (if it will be enabled by default at all). Correct me through the
-comments on reddit if that's not the case. Next diagram!
+To quickly get back to the potential new features: Apart from the bot that will be the
+top priority after the client rewrite, I'm pretty certain I will implement both the
+interactive tutorial and the notifications. I am pretty sure the latter simply got "Eww.
+Don't do that" twice because it wasn't "**Optional** notifications". I won't make your
+browser play sound whenever something happens in the game without leaving you an option
+to disable it (if it will be enabled by default at all). Next diagram!
 
 [![Did you experience any of these problems?](/img/survey-3.png)][img3]
 
