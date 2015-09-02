@@ -29,7 +29,7 @@ Here are the results of the first question:
 <!-- more -->
 
 I think it's simply nice to see that nobody picked the "Seriously needs improvement"
-option, but this is obviously not the most revealing set of answers. For "Other", wwo
+option, but this is obviously not the most revealing set of answers. For "Other", two
 people wrote that they had technical problems with the site, one stated they just
 couldn't play at all because they had nobody to play with. On to the next diagram!
 
