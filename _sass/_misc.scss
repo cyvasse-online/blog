@@ -26,6 +26,7 @@ h1, h2, h3 {
 
 p {
     margin-left: .75em;
+    line-height: 1.5em;
 }
 
 strong {
@@ -39,6 +40,11 @@ a {
     &:hover {
         color: lighten($textColor, 30%);
     }
+}
+
+/* disqus */
+#disqus_thread {
+    margin-left: .75em;
 }
 
 /* general purpose CSS class */
